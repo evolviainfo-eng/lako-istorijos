@@ -44,8 +44,29 @@
   onScrollHead();
   window.addEventListener('scroll', onScrollHead, { passive: true });
 
+  /* ── burger / mobile meniu ── */
+  var burger = document.querySelector('.burger');
+  var mobileMenu = document.querySelector('.mobile-menu');
+  if (burger && mobileMenu) {
+    function setMenu(open) {
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileMenu.classList.toggle('is-open', open);
+      document.body.classList.toggle('menu-open', open);
+      if (lenis) { open ? lenis.stop() : lenis.start(); }
+    }
+    burger.addEventListener('click', function () {
+      setMenu(burger.getAttribute('aria-expanded') !== 'true');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setMenu(false); });
+    });
+    window.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') setMenu(false);
+    });
+  }
+
   /* ── hero įėjimas ── */
-  if (hasGsap && !reduced) {
+  if (hasGsap && !reduced && document.querySelector('.hero')) {
     gsap.fromTo('.hero-title .line > span',
       { yPercent: 108 },
       { yPercent: 0, duration: 1.1, stagger: 0.12, ease: 'power4.out', delay: 0.15, force3D: false, clearProps: 'transform' });
@@ -66,7 +87,8 @@
   var revealTargets = [
     '.sec-head', '.svc-row', '.story-head', '.story-quote', '.story-media',
     '.istorijos-more', '.meistras-photo', '.meistras-body', '.kontaktai-body',
-    '.kontaktai-map', '.faq-item', '.braukis-head', '.braukis-cap'
+    '.kontaktai-map', '.faq-item', '.braukis-head', '.braukis-cap',
+    '.page-head', '.svc-mini li', '.cta-band .wrap'
   ];
   revealTargets.forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el) { el.setAttribute('data-reveal', ''); });
@@ -135,8 +157,8 @@
   }
 
   /* ── PASLAUGOS hover-preview (desktop, pointer: fine) ── */
-  if (finePointer && !isMobile && !reduced) {
-    var preview = document.querySelector('.svc-preview');
+  var preview = document.querySelector('.svc-preview');
+  if (preview && finePointer && !isMobile && !reduced) {
     var pImg = preview.querySelector('img');
     var px = 0, py = 0, tx = 0, ty = 0, visible = false, raf = null;
 
@@ -201,15 +223,16 @@
     });
   }
 
-  /* ── sticky call bar: po hero, slepiasi prie kontaktų ── */
+  /* ── sticky call bar: po hero, slepiasi prie kontaktų/footer ── */
   var callBar = document.querySelector('.call-bar');
   if (callBar && isMobile) {
     var hero = document.querySelector('.hero');
-    var kontaktai = document.getElementById('kontaktai');
+    var hideAt = document.getElementById('kontaktai') || document.querySelector('.cta-band') || document.querySelector('.site-foot');
+    var showAfter = hero ? function () { return window.scrollY > hero.offsetHeight * 0.7; }
+                         : function () { return window.scrollY > 320; };
     function onScrollBar() {
-      var pastHero = window.scrollY > hero.offsetHeight * 0.7;
-      var nearContact = kontaktai.getBoundingClientRect().top < window.innerHeight * 0.85;
-      callBar.classList.toggle('is-visible', pastHero && !nearContact);
+      var nearEnd = hideAt ? hideAt.getBoundingClientRect().top < window.innerHeight * 0.85 : false;
+      callBar.classList.toggle('is-visible', showAfter() && !nearEnd);
     }
     window.addEventListener('scroll', onScrollBar, { passive: true });
     onScrollBar();

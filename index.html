@@ -3,27 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lako istorijos — autoestetikos studija Vilniuje | Poliravimas, PPF, keramikinės dangos</title>
-  <meta name="description" content="Lako istorijos — premium detailing studija Vilniuje, Justiniškių g. 64. Lako poliravimas ir korekcija, GSWF PPF plėvelės, Ewocar ir System X keramikinės dangos, cheminis valymas. Kur įbrėžimai tampa istorija.">
+  <title>Lako istorijos – automobilių detailing Vilniuje</title>
+  <meta name="description" content="Autoestetikos studija Vilniuje: lako poliravimas ir korekcija, PPF plėvelės, keramikinės dangos, cheminis valymas. Justiniškių g. 64. Tel. +370 631 12221.">
   <meta name="theme-color" content="#0C0A0A">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="canonical" href="https://lakoistorijos.lt/">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lakoistorijos.lt/">
   <meta property="og:title" content="Lako istorijos — kur įbrėžimai tampa istorija">
-  <meta property="og:description" content="Autoestetikos studija Vilniuje. Poliravimas, PPF plėvelės, keramikinės dangos, detailing be kompromisų.">
+  <meta property="og:description" content="Automobilių detailing studija Vilniuje. Poliravimas, PPF plėvelės, keramikinės dangos, detailing be kompromisų.">
   <meta property="og:image" content="https://lakoistorijos.lt/img/og.jpg">
   <meta property="og:locale" content="lt_LT">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="/img/hero.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AutoDetailing",
     "name": "Lako istorijos",
-    "description": "Autoestetikos studija Vilniuje: lako poliravimas ir korekcija, PPF plėvelės, keramikinės dangos, cheminis valymas.",
+    "url": "https://lakoistorijos.lt/",
+    "image": "https://lakoistorijos.lt/img/og.jpg",
+    "description": "Automobilių detailing studija Vilniuje: lako poliravimas ir korekcija, PPF plėvelės, keramikinės dangos, cheminis valymas.",
     "telephone": "+37063112221",
     "address": {
       "@type": "PostalAddress",
@@ -36,7 +39,19 @@
     "sameAs": [
       "https://www.facebook.com/Lakoistorijos",
       "https://www.instagram.com/lako_istorijos/"
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Detailing paslaugos",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kompleksinis automobilių detailing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lako poliravimas ir korekcija" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PPF apsauginės plėvelės" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Keramikinės dangos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Detalus cheminis valymas" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bitumo ir metalo apnašų šalinimas" } }
+      ]
+    }
   }
   </script>
 </head>
@@ -44,35 +59,47 @@
   <div class="grain" aria-hidden="true"></div>
 
   <header class="site-head" id="top">
-    <a class="brand" href="#top" aria-label="Lako istorijos — į viršų">
+    <a class="brand" href="/" aria-label="Lako istorijos — pagrindinis puslapis">
       <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 29 27H3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 13.5 22.4 25H9.6Z" fill="var(--accent)"/></svg>
       <span class="brand-word">Lako istorijos<em>autoestetikos studija</em></span>
     </a>
     <nav class="site-nav" aria-label="Pagrindinė navigacija">
-      <a href="#braukis">Prieš / po</a>
-      <a href="#paslaugos">Paslaugos</a>
-      <a href="#istorijos">Istorijos</a>
-      <a href="#meistras">Meistras</a>
-      <a href="#kontaktai">Kontaktai</a>
+      <a href="/paslaugos">Paslaugos</a>
+      <a href="/darbai">Darbai</a>
+      <a href="/duk">DUK</a>
+      <a href="/kontaktai">Kontaktai</a>
     </nav>
     <a class="head-tel" href="tel:+37063112221">+370 631 12221</a>
+    <button class="burger" aria-label="Meniu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobili navigacija">
+      <a href="/" aria-current="page"><i>01</i>Pagrindinis</a>
+      <a href="/paslaugos"><i>02</i>Paslaugos</a>
+      <a href="/darbai"><i>03</i>Darbai</a>
+      <a href="/duk"><i>04</i>DUK</a>
+      <a href="/kontaktai"><i>05</i>Kontaktai</a>
+    </nav>
+    <a class="mobile-menu-tel" href="tel:+37063112221">+370 631 12221</a>
+  </div>
 
   <main>
     <!-- ═══ HERO ═══ -->
     <section class="hero">
       <figure class="hero-media" aria-hidden="true">
-        <img src="img/hero.webp" alt="" width="2268" height="3024" fetchpriority="high">
+        <img src="/img/hero.webp" alt="" width="2268" height="3024" fetchpriority="high">
       </figure>
       <div class="hero-scrim" aria-hidden="true"></div>
       <div class="hero-inner">
         <h1 class="hero-title">
           <span class="line"><span>Kur įbrėžimai</span></span>
           <span class="line"><span>tampa <em>istorija.</em></span></span>
+          <span class="sr-only">— automobilių detailing studija Vilniuje</span>
         </h1>
         <p class="hero-lead">Lako istorijos — autoestetikos studija Vilniuje. Lako poliravimas ir korekcija, PPF&nbsp;plėvelės, keramikinės dangos ir detailing be&nbsp;kompromisų.</p>
         <div class="hero-cta">
-          <a class="btn btn-solid" href="#kontaktai">Registruotis vizitui</a>
+          <a class="btn btn-solid" href="/kontaktai">Registruotis vizitui</a>
           <a class="btn btn-line" href="tel:+37063112221">Skambinti dabar</a>
         </div>
         <p class="hero-proof"><strong>100&nbsp;% rekomenduoja</strong> — 12 atsiliepimų <a href="https://www.facebook.com/Lakoistorijos" target="_blank" rel="noopener">Facebook</a></p>
@@ -94,85 +121,42 @@
           </div>
           <div class="ba" id="ba">
             <figure class="ba-before">
-              <img src="img/ba-before.webp" alt="BMW X5 lako paviršius prieš poliravimą — cirkuliniai įbrėžimai" width="1920" height="1200" loading="lazy">
+              <img src="/img/ba-before.webp" alt="BMW X5 lako paviršius prieš poliravimą — cirkuliniai įbrėžimai" width="1920" height="1200" loading="lazy">
               <figcaption class="ba-label">Prieš</figcaption>
             </figure>
             <figure class="ba-after">
-              <img src="img/ba-after.webp" alt="BMW X5 lako paviršius po dviejų etapų poliravimo — veidrodinis blizgesys" width="1920" height="1200" loading="lazy">
+              <img src="/img/ba-after.webp" alt="BMW X5 lako paviršius po dviejų etapų poliravimo Vilniuje — veidrodinis blizgesys" width="1920" height="1200" loading="lazy">
               <figcaption class="ba-label ba-label--po">Po</figcaption>
             </figure>
             <div class="ba-divider" aria-hidden="true"><span class="ba-handle"></span></div>
             <input class="ba-range" type="range" min="0" max="100" value="18" aria-label="Prieš ir po palyginimas">
           </div>
-          <p class="braukis-cap">BMW X5 — „iš pilkos, subraižytos spalvos sugrįžo tikroji juoda.“ Dviejų etapų poliravimas, 2026.</p>
+          <p class="braukis-cap">BMW X5 — „iš pilkos, subraižytos spalvos sugrįžo tikroji juoda.“ Dviejų etapų poliravimas, 2026. <a href="/darbai">Daugiau darbų&nbsp;→</a></p>
         </div>
       </div>
     </section>
 
-    <!-- ═══ PASLAUGOS ═══ -->
-    <section class="paslaugos" id="paslaugos">
+    <!-- ═══ PASLAUGOS (mini) ═══ -->
+    <section class="svc-mini-sec">
       <div class="wrap">
         <div class="sec-head">
           <p class="kicker">Paslaugos</p>
           <h2>Nuo vieno įbrėžimo iki viso kėbulo</h2>
-          <p class="sec-lead">Kiekvienas automobilis individualus, todėl kaina — pagal lako būklę ir darbų apimtį. Įvertinimas telefonu arba apžiūros metu — nemokamai.</p>
         </div>
-        <ul class="svc-list">
-          <li class="svc-row" data-img="img/svc-detailing.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">01</span>
-              <span class="svc-name">Kompleksinis detailing</span>
-              <span class="svc-desc">Kėbulo ir ratlankių detalus plovimas, paruošimas, priežiūra nuo A iki Z</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="svc-row" data-img="img/svc-poliravimas.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">02</span>
-              <span class="svc-name">Lako poliravimas ir korekcija</span>
-              <span class="svc-desc">Vieno arba dviejų etapų poliravimas, įbrėžimų ir oksidacijos šalinimas</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="svc-row" data-img="img/svc-ppf.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">03</span>
-              <span class="svc-name">PPF apsauginės plėvelės</span>
-              <span class="svc-desc">GSWF plėvelė kėbului ir žibintams — apsauga nuo skaldos ir įbrėžimų</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="svc-row" data-img="img/svc-keramika.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">04</span>
-              <span class="svc-name">Keramikinės dangos</span>
-              <span class="svc-desc">Ewocar Pro60 (iki 60 mėn.) ir System X — blizgesys ir ilgalaikė apsauga</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="svc-row" data-img="img/svc-valymas.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">05</span>
-              <span class="svc-name">Detalus cheminis valymas</span>
-              <span class="svc-desc">Salonas, oda, plastikai — atgaivinimas be agresyvių priemonių</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="svc-row" data-img="img/svc-apnasos.webp">
-            <a href="#kontaktai">
-              <span class="svc-idx">06</span>
-              <span class="svc-name">Apnašų šalinimas</span>
-              <span class="svc-desc">Bitumo, metalo dulkių ir medžių sakų likučiai — nuo kėbulo ir ratlankių</span>
-              <span class="svc-arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
+        <ul class="svc-mini">
+          <li><a href="/paslaugos#detailing"><span class="svc-idx">01</span><strong>Kompleksinis detailing</strong><small>Kėbulo ir ratlankių priežiūra nuo A iki Z</small></a></li>
+          <li><a href="/paslaugos#poliravimas"><span class="svc-idx">02</span><strong>Lako poliravimas ir korekcija</strong><small>Įbrėžimų ir oksidacijos šalinimas</small></a></li>
+          <li><a href="/paslaugos#ppf"><span class="svc-idx">03</span><strong>PPF apsauginės plėvelės</strong><small>GSWF plėvelė kėbului ir žibintams</small></a></li>
+          <li><a href="/paslaugos#keramika"><span class="svc-idx">04</span><strong>Keramikinės dangos</strong><small>Ewocar Pro60 ir System X apsauga</small></a></li>
+          <li><a href="/paslaugos#valymas"><span class="svc-idx">05</span><strong>Detalus cheminis valymas</strong><small>Salonas, oda ir plastikai</small></a></li>
+          <li><a href="/paslaugos#apnasos"><span class="svc-idx">06</span><strong>Apnašų šalinimas</strong><small>Bitumas, metalo dulkės, medžių sakai</small></a></li>
         </ul>
+        <p class="sec-more"><a class="btn btn-line" href="/paslaugos">Visos paslaugos ir aprašymai</a></p>
       </div>
-      <div class="svc-preview" aria-hidden="true"><img src="img/svc-detailing.webp" alt="" width="1400" height="1120"></div>
     </section>
 
-    <!-- ═══ ISTORIJOS ═══ -->
-    <section class="istorijos" id="istorijos">
+    <!-- ═══ IŠTRAUKA IŠ DARBŲ ═══ -->
+    <section class="istorijos">
       <div class="wrap">
         <div class="sec-head">
           <p class="kicker">Iš studijos archyvo</p>
@@ -189,45 +173,13 @@
           </header>
           <blockquote class="story-quote">„Sako, greičiausi automobiliai — raudoni. Neteko išbandyti šio Civic greičio, bet jo spalvos charakterį pamačiau iškart. Procesas nebuvo pats lengviausias, bet rezultatas kalba pats už save.“</blockquote>
           <div class="story-media story-media--a">
-            <figure class="sm-big"><img src="img/story-civic-1.webp" alt="Raudona Honda Civic Lako istorijų studijoje po poliravimo" width="1600" height="2133" loading="lazy"></figure>
-            <figure><img src="img/story-civic-2.webp" alt="Honda Civic galas — gilus raudonas blizgesys po Ewocar Pro60 dangos" width="1600" height="2133" loading="lazy"></figure>
-            <figure><img src="img/story-civic-3.webp" alt="Honda Civic lako korekcijos vieta stambiu planu" width="1600" height="2133" loading="lazy"></figure>
+            <figure class="sm-big"><img src="/img/story-civic-1.webp" alt="Raudona Honda Civic po poliravimo detailing studijoje Vilniuje" width="1600" height="2133" loading="lazy"></figure>
+            <figure><img src="/img/story-civic-2.webp" alt="Honda Civic galas — gilus raudonas blizgesys po Ewocar Pro60 keramikinės dangos" width="1600" height="2133" loading="lazy"></figure>
+            <figure><img src="/img/story-civic-3.webp" alt="Honda Civic lako korekcijos vieta stambiu planu" width="1600" height="2133" loading="lazy"></figure>
           </div>
         </article>
 
-        <article class="story">
-          <header class="story-head">
-            <span class="story-no" aria-hidden="true">№02</span>
-            <div>
-              <h3>BMW X5 — sugrįžo tikroji juoda</h3>
-              <p class="story-meta">Lako korekcija · įbrėžimų šalinimas · dviejų etapų poliravimas</p>
-            </div>
-          </header>
-          <blockquote class="story-quote">„Kai atvyksta tokie automobiliai, jau iš pirmo žvilgsnio matai, kad darbo reikės įdėti daug. Bet jie kartais net labiau traukia — žinai, jog skirtumas po darbų bus daugiau nei akivaizdus.“</blockquote>
-          <div class="story-media story-media--b">
-            <figure><img src="img/story-x5-2.webp" alt="BMW X5 durelės prieš poliravimą — matinis, subraižytas lakas" width="1600" height="2133" loading="lazy"></figure>
-            <figure><img src="img/story-x5-3.webp" alt="BMW X5 kapotas po poliravimo — šešiakampių šviestuvų atspindžiai lake" width="1600" height="2133" loading="lazy"></figure>
-            <figure class="sm-big"><img src="img/story-x5-1.webp" alt="Juodas BMW X5 studijoje po dviejų etapų poliravimo" width="1600" height="2133" loading="lazy"></figure>
-          </div>
-        </article>
-
-        <article class="story">
-          <header class="story-head">
-            <span class="story-no" aria-hidden="true">№03</span>
-            <div>
-              <h3>Volvo 240 — klasikas iš Olandijos</h3>
-              <p class="story-meta">Vieno etapo poliravimas · apsauginė danga · toliau — kelionė į Švediją</p>
-            </div>
-          </header>
-          <blockquote class="story-quote">„Ji atvyko su praeitimi ant kėbulo — randais, įbrėžimais, prigesusiu spindesiu. Dabar ji — atgimusi. Pasiruošusi rašyti naują istorijos puslapį — tyliai, bet oriai.“</blockquote>
-          <div class="story-media story-media--c">
-            <figure class="sm-wide"><img src="img/story-volvo-1.webp" alt="Raudonas Volvo 240 klasikas Lako istorijų studijoje" width="1440" height="810" loading="lazy"></figure>
-            <figure><img src="img/story-volvo-2.webp" alt="Volvo 240 kapotas — šešiakampių šviestuvų atspindys poliruotame lake" width="1440" height="810" loading="lazy"></figure>
-            <figure><img src="img/story-volvo-3.webp" alt="Volvo 240 iš priekio po poliravimo ir apsauginės dangos" width="1440" height="810" loading="lazy"></figure>
-          </div>
-        </article>
-
-        <p class="istorijos-more">Daugiau istorijų kasdien — <a href="https://www.instagram.com/lako_istorijos/" target="_blank" rel="noopener">Instagram @lako_istorijos</a></p>
+        <p class="istorijos-more"><a class="btn btn-line" href="/darbai">Visi atlikti darbai</a> &nbsp; Daugiau istorijų kasdien — <a href="https://www.instagram.com/lako_istorijos/" target="_blank" rel="noopener">@lako_istorijos</a></p>
       </div>
     </section>
 
@@ -235,7 +187,7 @@
     <section class="meistras" id="meistras">
       <div class="wrap meistras-grid">
         <figure class="meistras-photo">
-          <img src="img/meistras.webp" alt="Vytautas Kalinka klijuoja PPF plėvelę ant automobilio žibinto" width="1800" height="1314" loading="lazy">
+          <img src="/img/meistras.webp" alt="Vytautas Kalinka klijuoja PPF apsauginę plėvelę ant automobilio žibinto" width="1800" height="1314" loading="lazy">
           <figcaption>Vytautas Kalinka — Lako istorijų meistras</figcaption>
         </figure>
         <div class="meistras-body">
@@ -254,61 +206,38 @@
       </div>
     </section>
 
-    <!-- ═══ KONTAKTAI ═══ -->
-    <section class="kontaktai" id="kontaktai">
-      <div class="wrap kontaktai-grid">
-        <div class="kontaktai-body">
-          <p class="kicker">Registracija</p>
-          <h2>Rezervuokite laiką savo automobiliui</h2>
-          <a class="tel-giant" href="tel:+37063112221">+370 631 12221</a>
-          <p class="kontaktai-note">Kaina — individuali, pagal automobilio būklę. Pasakysiu telefonu arba apžiūros metu.</p>
-          <div class="kontaktai-actions">
-            <a class="btn btn-solid" href="tel:+37063112221">Skambinti</a>
-            <a class="btn btn-line" href="https://m.me/Lakoistorijos" target="_blank" rel="noopener">Žinutė Messenger</a>
-            <a class="btn btn-line" href="https://www.instagram.com/lako_istorijos/" target="_blank" rel="noopener">Instagram DM</a>
-          </div>
-          <dl class="kontaktai-info">
-            <div><dt>Studija</dt><dd>Justiniškių g. 64, LT-05239 Vilnius</dd></div>
-            <div><dt>Darbo laikas</dt><dd>I–V 10:00–19:00</dd></div>
-            <div><dt>Rekvizitai</dt><dd>MB „Lako istorijos“, į. k. 307132687</dd></div>
-          </dl>
-        </div>
-        <div class="kontaktai-map">
-          <iframe title="Lako istorijos studijos vieta žemėlapyje — Justiniškių g. 64, Vilnius" src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sJustini%C5%A1ki%C5%B3%20g.%2064%2C%20Vilnius!6i15" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-          <a class="map-fallback" href="https://maps.google.com/?q=Justini%C5%A1ki%C5%B3+g.+64,+Vilnius" target="_blank" rel="noopener">Justiniškių g. 64, Vilnius — atidaryti Google Maps ↗</a>
-        </div>
-      </div>
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-band">
       <div class="wrap">
-        <dl class="faq">
-          <div class="faq-item">
-            <dt>Kiek kainuoja poliravimas ar danga?</dt>
-            <dd>Kiekvienas automobilis individualus — kaina priklauso nuo lako būklės ir darbų apimties. Paskambinkite arba atsiųskite nuotraukas žinute — įvertinsiu.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Kiek laiko „laikosi“ poliravimas?</dt>
-            <dd>Tinkamai ir profesionaliai atlikus, rezultatas išlieka metų metus, o keramikinė danga ar PPF plėvelė jį dar prailgina.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Kas yra PPF plėvelė ir ar jos reikia?</dt>
-            <dd>Paint Protection Film — skaidri apsauginė plėvelė kėbului ir žibintams. Apsaugoti iš anksto kainuoja mažiau nei vėliau taisyti — ypač naujam automobiliui.</dd>
-          </div>
-          <div class="faq-item">
-            <dt>Ar tvarkote motociklus?</dt>
-            <dd>Taip — studijoje lankosi ir motociklai. Susisiekite, aptarsime, ką galima padaryti būtent jūsų atveju.</dd>
-          </div>
-        </dl>
+        <p class="kicker">Registracija</p>
+        <h2>Rezervuokite laiką savo automobiliui</h2>
+        <a class="tel-giant" href="tel:+37063112221">+370 631 12221</a>
+        <div class="cta-band-actions">
+          <a class="btn btn-solid" href="/kontaktai">Kontaktai ir žemėlapis</a>
+          <a class="btn btn-line" href="/duk">Dažni klausimai</a>
+        </div>
+        <p class="cta-band-note">Kaina — individuali, pagal automobilio būklę. Justiniškių g. 64, Vilnius · I–V 10:00–19:00.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-foot">
-    <div class="wrap foot-grid">
-      <span>© 2026 MB „Lako istorijos“ · Vilnius</span>
-      <span class="foot-slogan">Kur įbrėžimai tampa istorija</span>
-      <span class="foot-social">
-        <a href="https://www.facebook.com/Lakoistorijos" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/lako_istorijos/" target="_blank" rel="noopener">Instagram</a>
-      </span>
+    <div class="wrap">
+      <nav class="foot-nav" aria-label="Puslapiai">
+        <a href="/" aria-current="page">Pagrindinis</a>
+        <a href="/paslaugos">Paslaugos</a>
+        <a href="/darbai">Darbai</a>
+        <a href="/duk">DUK</a>
+        <a href="/kontaktai">Kontaktai</a>
+      </nav>
+      <div class="foot-grid">
+        <span>© 2026 MB „Lako istorijos“ · į. k. 307132687 · Justiniškių g. 64, Vilnius</span>
+        <span class="foot-slogan">Kur įbrėžimai tampa istorija</span>
+        <span class="foot-social">
+          <a href="https://www.facebook.com/Lakoistorijos" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/lako_istorijos/" target="_blank" rel="noopener">Instagram</a>
+        </span>
+      </div>
     </div>
   </footer>
 
@@ -320,6 +249,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
